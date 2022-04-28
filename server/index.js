@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
+try {
+    app.get('/', fakeFunc())
+}   catch(err) {console.error(error)};
+
 const port = process.env.PORT || 4545
 
 app.listen(port, () => {console.log(`Up and running on port ${port}`)});
