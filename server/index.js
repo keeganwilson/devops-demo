@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 try {
     app.get('/', fakeFunc())
-}   catch(err) {console.error(error)};
+}   catch(error) {console.error(error)};
 
 const port = process.env.PORT || 4545
 
