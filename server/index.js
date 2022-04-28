@@ -9,4 +9,4 @@ app.get('/', (rex, res) => {
 
 const port = process.env.PORT || 4545
 
-app.listen(port, () => console.log('Up and running on port 4545'));
+app.listen(4545, () => console.log(`Up and running on port ${port}`));
