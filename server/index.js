@@ -11,6 +11,8 @@ var rollbar = new Rollbar({
   captureUnhandledRejections: true,
 })
 
+app.use(express.json)
+
 let students = [];
 
 app.get('/', (req, res) => {
